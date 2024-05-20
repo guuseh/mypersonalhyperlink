@@ -1,4 +1,4 @@
-import "regenerator-runtime/runtime";
+import regeneratorRuntime from "regenerator-runtime";
 import { useState } from 'react'
 import ReactDOM from "react-dom"
 import * as Phys from "react-dom-box2d"
