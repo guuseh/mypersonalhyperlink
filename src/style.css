@@ -1,0 +1,169 @@
+@font-face {
+    font-family: clacon;
+    src: url("/fonts/clacon2.woff2");
+}
+@font-face {
+    font-family: manifont;
+    src: url("/fonts/ManifontBook.woff");
+}
+
+:root{
+    --cursor: url("data:image/svg+xml,%3Csvg width='17.52' height='26.07' xmlns='http://www.w3.org/2000/svg' data-name='Layer 2' viewBox='0 0 17.52 26.07'%3E%3Cg data-name='Layer 1'%3E%3Cpath d='M13.15 24.6v1.47h-2.93V24.6h2.94ZM2.92 21.66v1.46H0V0h2.92v1.21H1.46v20.46h1.46ZM16.08 14.38h1.44v2.91h-5.84v1.45h-1.45v-2.91h5.85v-1.45ZM10.22 24.6H8.75v-2.93h1.47v2.93ZM8.75 21.66H7.28v-2.93h1.44c.02.06.03.08.03.09v2.84ZM13.15 21.67h1.45v2.93h-1.45v-2.93Z'/%3E%3Cpath d='M11.68 18.73c.38 0 .76.01 1.14.02h.33v2.92h-1.47v-2.93ZM7.28 18.73c-.36 0-.72.02-1.07.02h-.37v1.45H4.39v-1.45h1.45v-1.44h1.44v1.43ZM2.92 1.21h1.44v1.43h1.45V4.1H4.36V2.65H2.92V1.21ZM13.15 11.44h1.47v1.47h-1.47v-1.47ZM14.61 12.91h1.47v1.47h-1.47v-1.47ZM10.21 8.51h1.47v1.47h-1.47V8.51ZM8.75 7.04h1.47v1.47H8.75V7.04ZM4.39 20.2v1.47H2.92V20.2h1.47ZM7.28 5.57h1.47v1.47H7.28V5.57Z'/%3E%3Cpath d='M11.68 9.97h1.47v1.47h-1.47V9.97ZM5.81 4.1h1.47v1.47H5.81V4.1Z'/%3E%3Cpath d='M5.82 4.1v1.47h1.47v1.47h1.47v1.47h1.47v1.47h1.47v1.47h1.47v1.47h1.47v1.47h1.47v1.45h-5.85v2.91h1.45v2.93h1.47v2.94h-2.94v-2.93H8.77v-2.84c0-.02-.01-.04-.03-.09H7.3v-1.43H5.86v1.44H4.41v1.46H2.94v1.47H1.48V1.21h1.46v1.44h1.44V4.1h1.45Z' style='fill:%23fff'/%3E%3C/g%3E%3C/svg%3E"), default;
+    --pointer: url("data:image/svg+xml,%3Csvg width='24.3' height='29.16' xmlns='http://www.w3.org/2000/svg' data-name='Layer 2' viewBox='0 0 24.3 29.16'%3E%3Cg data-name='Layer 1'%3E%3Cpath d='M21.87 14.58h-2.43V7.29h-9.05V2.43h-3.1v12.15H2.43v7.29h4.86v4.86h12.15v-4.86h2.43v-7.29z' style='fill:%23fff'/%3E%3Cpath d='M9.72 14.58h2.43V7.29h2.43V4.86h-2.43V0H7.29v2.43h2.43v12.15zM17.01 14.58V9.72h2.43V7.29h-4.86v7.29h2.43zM21.87 12.15V9.72h-2.43v4.86h2.43v4.86h2.43v-7.29h-2.43z'/%3E%3Cpath d='M4.86 14.58v2.43h2.43V2.43H4.86v9.72H0v4.86h2.43v-2.43h2.43zM4.86 17.01H2.43v4.86h2.43v-4.86zM7.29 21.87H4.86v4.86h2.43v-4.86zM19.44 19.44h2.43v4.86h-2.43z'/%3E%3Cpath d='M17.01 26.73H7.29v2.43h12.15V24.3h-2.43v2.43z'/%3E%3C/g%3E%3C/svg%3E"), pointer;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: "hidden";
+   }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: manifont;
+    font-size: 1.5em;
+    letter-spacing: 0.1rem;
+    overflow: "hidden";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
+    cursor: none;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.letter{
+    display: inline-block;
+    min-width: 6px;
+}
+
+.click{
+    cursor: var(--pointer);
+}
+
+.websitewrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 255);
+    overflow: "hidden";
+}
+
+.websitecontainer{
+    background-color: rgb(0, 0, 255);
+    color: white;
+    width: 40vw;
+    height: 50vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    position: relative;
+}
+.websitecontainer span{
+    text-decoration: underline 0.9em rgb(0, 0, 255);
+    text-underline-offset: -0.8em;
+    text-decoration-skip-ink:none;
+    z-index:100;
+}
+
+.link{
+    font-family: "Times New Roman";
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: underline rgb(149, 0, 255);
+    text-underline-offset: 0.1em;
+    color: rgb(149, 0, 255);
+    cursor: var(--pointer);
+    line-height: 1.3rem;
+    /* margin-bottom: 30px; */
+}
+
+.webcontainer3{
+    /* background-color: rgb(0, 0, 255); */
+    height: 100%;
+    /* border: 2px solid white; */
+    flex-shrink: 1;
+    position: relative;
+}
+.webcontainer3-8{
+    /* background-color: rgb(0, 0, 255); */
+    height: 100%;
+    /* border: 2px solid white; */
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.corner{
+    position: absolute;
+    width: min-content;
+    height: min-content;
+    background-color: rgb(102,164,255);
+    bottom: 0;
+    right: 0;
+    font-size: 0.9rem;
+    font-family: clacon;
+    padding: 5px;
+}
+
+.finalgrid{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11,1fr);
+    color:rgb(0, 0, 255)
+}
+.grid__item{
+    /* grid-column: span 1; */
+    /* grid-row: span 1; */
+    border-left: 3px solid rgb(0, 0, 255);
+    border-top: 3px solid rgb(0, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esc_grid__item{
+    background-color: white;
+    border-left: 3px solid rgb(0, 0, 255);
+    border-top: 3px solid rgb(0, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crossout{
+    background-color: grey;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><rect width='100' height='100' fill='grey' stroke='white'/><path d='M100 0 L0 100 ' stroke='white' stroke-width='1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='1'/></svg>");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: 100% 100%, auto;
+}
+
+.icon-round{
+    background: url("/img/icon-flat.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: 100% 100%, auto;
+}
+
+.icon-light{
+    background: url("/img/icon-light.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: 90% 90%, auto;
+}
+
