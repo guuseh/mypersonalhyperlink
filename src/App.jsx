@@ -34,7 +34,7 @@ const App = () => {
   return (
     <>
     <Tooltip />
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Page1 />} />
         <Route path="/2" element={<Page2 />} />
