@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://guuseh.github.io/mypersonalhyperlink",
+  "homepage": "https://guuseh.github.io/mypersonalhyperlink/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
