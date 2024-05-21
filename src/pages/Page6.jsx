@@ -20,8 +20,6 @@ function Page6() {
         border: "2px solid white",
         backgroundColor: "rgb(0, 0, 255)",
         position: "absolute",
-        // top: window.innerHeight/2 - 250,
-        // right: window.innerWidth/2 - 250,
         zIndex: 0
     }
     const textSpan = {
