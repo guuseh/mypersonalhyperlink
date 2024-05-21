@@ -9,27 +9,27 @@ const Page2 = () => {
   const [clicked, setClicked] = useState(false)
   const duration = 2;
   const pictures = [
-    "/img/bag.png",
-    "/img/balls.png",
-    "/img/books.png",
-    "/img/bracelet.png",
-    "/img/cam.png",
-    "/img/candle.png",
-    "/img/ceramic.png",
-    "/img/cross.png",
-    "/img/fukt.png",
-    "/img/ghost.png",
-    "/img/greece.png",
-    "/img/hondje.png",
-    "/img/jager.png",
-    "/img/keys.png",
-    "/img/matches.png",
-    "/img/mug.png",
-    "/img/pic.png",
-    "/img/polish.png",
-    "/img/rings.png",
-    "/img/sudoku.png",
-    "/img/turtle.png",
+    "./img/bag.png",
+    "./img/balls.png",
+    "./img/books.png",
+    "./img/bracelet.png",
+    "./img/cam.png",
+    "./img/candle.png",
+    "./img/ceramic.png",
+    "./img/cross.png",
+    "./img/fukt.png",
+    "./img/ghost.png",
+    "./img/greece.png",
+    "./img/hondje.png",
+    "./img/jager.png",
+    "./img/keys.png",
+    "./img/matches.png",
+    "./img/mug.png",
+    "./img/pic.png",
+    "./img/polish.png",
+    "./img/rings.png",
+    "./img/sudoku.png",
+    "./img/turtle.png",
   ]
 
   const personalsiteStyle = {
@@ -115,7 +115,7 @@ return (
     <div style={close}></div><div style={{...close, left: "30px"}}></div><div style={{...close, left: "55px"}}></div>
 
     <Typewriter text="Building a personal website begins with the my: .myVariable, .myContainer, .myStyle, my home. My work in progress, my never-ending project, my ever-changing identity objectified / personified. My corner of the web, tucked away and rarely visited, but my own." delay={20}/>
-    <motion.img className="click" src="/img/laptop.png" style={{position: "absolute", bottom: "30px", right: "45px", width: "100px"}} 
+    <motion.img className="click" src="./img/laptop.png" style={{position: "absolute", bottom: "30px", right: "45px", width: "100px"}} 
     initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 2}}} onClick={(e) => {handleNext()}}/>
     <div className="corner">hyperlink//</div>
   </motion.div>
